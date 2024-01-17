@@ -1,5 +1,17 @@
-* {
+html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*::focus {
+  outline: 2px dashed #000;
+  outline-offset: 3px;
 }
 
 body {
@@ -63,15 +75,19 @@ HERO */
 }
 
 .hero__title {
+  padding: 0;
+  margin: 0;
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .hero__text {
   padding-left: 15px;
-
+  margin: 0;
   font-size: 16px;
   color: #777;
   border: 1px solid #000;
+  margin-bottom: 20px;
 }
 
 .hero__button {
@@ -81,6 +97,15 @@ HERO */
   color: #fff;
   background-color: #ea625c;
   text-decoration: none;
+}
+
+.opacity-button:hover {
+  background-color: #b14744;
+  opacity: 0.8;
+}
+.opacity-button:active {
+  background-color: #c01e1b;
+  opacity: 0.6;
 }
 
 .hero__img {
@@ -98,6 +123,7 @@ HERO */
 
 .info__inner {
   list-style-type: none;
+  margin: 0;
 }
 
 .info-title {
@@ -168,6 +194,8 @@ HERO */
   font-size: 50px;
   letter-spacing: -2px;
   line-height: 53px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .sell__text {
@@ -177,6 +205,8 @@ HERO */
   border-left: 2px solid #000;
   padding-left: 35px;
   margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .sell__button {
@@ -186,4 +216,40 @@ HERO */
   color: #fff;
   background-color: #ea625c;
   text-decoration: none;
+}
+
+.footer {
+  background-image: url("../img/runners\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-width: 1250px;
+  height: 834px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__wrapper {
+  margin-left: 830px;
+}
+
+.footer__title {
+  width: 490px;
+  font-weight: bold;
+  margin: 0;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer__text {
+  width: 490px;
+  font-weight: relative;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  border-left: 2px solid rgb(255, 255, 255);
+  padding-left: 35px;
+  margin-bottom: 40px;
 }
